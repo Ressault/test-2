@@ -6,33 +6,39 @@ body {
     line-height: 1.6em;
 }
 
-#container {
-	width: 1000px;
-	margin: 20px auto;
-	background: rgba(228, 228, 228, 1);
-	padding: 20px;
+#sidebar {
+	position: fixed;
+	width: 120px;
+	top: 0px;
+	bottom: 0px;
+	text-align: center;
+	background: rgba(56, 64, 71, 1);
+	left: 0;
 }
 
-#left-container {
-	width: 38%;
-	float: left;
+#sidebar ul {
+	padding-left: 0px;
+	list-style: none;
+	font-size: 25px;
 }
 
-#right-container {
-	width: 60%;
-	float: right;
+#sidebar ul li {
+	margin-bottom: 20px;
 }
 
-.clear {
-	clear: both;
+#page-content {
+	margin-left: 120px;
+	padding: 20px 60px;
 }
 
 .card {
 	background-color: white;
-	padding: 20px;
+	padding: 25px;
+	padding-left: 50px;
 	margin: 10px auto;
 	border-radius: 4px;
 	box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
+
 
 }
 
@@ -74,9 +80,7 @@ body {
   font-size: 25px;
 }
 
-.text-center p {
-	text-align: justify;
-}
+
 
 .space-vertical {
 	height: 3em;
@@ -115,18 +119,5 @@ a:hover {
 	height: 131px;
 }
 
-.text-right {
-	text-align: right;
-}
 
 
-#footer {
-	position: relative;
-	padding-bottom: 90px;
-}
-
-.bottom-right {
-	position: absolute;
-	bottom: 10px;
-	right: -30px
-}
